@@ -19,6 +19,45 @@
   <link rel="stylesheet" href="css/main-green.css" type="text/css">
   <script src="js/jquery-2.1.3.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.11.2.js"></script> -->
+  <!-- <script type="text/javascript"> -->
+  <!-- <script>
+    jQuery(window).load(function($){
+      atualizaRelogio();
+    });
+  </script> -->
+  <!-- <script>
+    function atualizaRelogio(){ 
+      var momentoAtual = new Date();
+      
+      var vhora = momentoAtual.getHours();
+      var vminuto = momentoAtual.getMinutes();
+      var vsegundo = momentoAtual.getSeconds();
+      
+      var vdia = momentoAtual.getDate();
+      var vmes = momentoAtual.getMonth() + 1;
+      var vano = momentoAtual.getFullYear();
+  
+            var anoNascimento = 1981;
+  
+            var idadeAtual = vano - anoNascimento;
+      
+      if (vdia < 10){ vdia = "0" + vdia;}
+      if (vmes < 10){ vmes = "0" + vmes;}
+      if (vhora < 10){ vhora = "0" + vhora;}
+      if (vminuto < 10){ vminuto = "0" + vminuto;}
+      if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+  
+      dataFormat = vdia + " / " + vmes + " / " + vano;
+      horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+  
+      document.getElementById("data").innerHTML = dataFormat;
+      document.getElementById("hora").innerHTML = horaFormat;
+      document.getElementById("minhaIdade").innerHTML = idadeAtual;
+  
+      setTimeout("atualizaRelogio()",1000);
+    }
+  </script> -->
 </head>
 
 <body class="material-template">
@@ -163,14 +202,16 @@
                       </p>
                     </div>
                   </div>
-
-                  <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="col-sm-6 col-md-6 col-lg-6" action="dataHora.html">
                     <ul class="info-list">
-                      <li><span class="title">Idade</span><span class="value">40</span></li>
+                      <li><span class="title">Idade</span><span class="value"><output id="minhaIdade"></output></span></li>
                       <li><span class="title">Nacionalidade</span><span class="value">Brasileiro</span></li>
+                      <li><output id="minhaIdade" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output></li>
+                      <li><output id="minhaIdade" ></output></li>
                       <li><span class="title">Cidade/Estado</span><span class="value">Brasília, DF</span></li>
                       <li><span class="title">E-mail</span><span class="value">jurandi.carvalho@outlook.com</span></li>
                       <li><span class="title">Tel.</span><span class="value">+55 61 9 8506 3808</span></li>
+                      <li><span class="title"><output id="minhaIdade" ></output></span>
                     </ul>
                   </div>
                 </div>
@@ -514,11 +555,11 @@
 
                     <!-- Portfolio Item 1 -->
                     <figure class="item" data-groups='["all", "media"]'>
-                      <a href="images/portfolio/full/1.jpg" class="lightbox" title="Modelo conceitual UML em ASTAH">
-                        <img src="images/portfolio/1.jpg" alt="">
+                      <a href="https://dsmovie-carvalho.netlify.app/?" target="_blank">
+                        <img src="images/portfolio/9.jpg" alt="">
                         <div>
-                          <h5 class="name">Modelo conceitual UML em ASTAH</h5>
-                          <small>Clique para mostrar</small>
+                          <h5 class="name">DsMovie - React and SpringBoot Model</h5>
+                          <small>Click to access</small>
                           <i class="fa fa-file-text-o"></i>
                         </div>
                       </a>
@@ -571,13 +612,12 @@
                     <!-- /Portfolio Item 4 -->
 
                     <!-- Portfolio Item 5 -->
-                    <figure class="item" data-groups='["all", "illustration"]'>
-                      <a href="https://dsmovie-carvalho.netlify.app/?" target="_blank">
-                        <!-- <a href="images/portfolio/full/11.jpg" class="lightbox" title="Duis Eu Eros Viverra"> -->
-                          <img src="images/portfolio/9.jpg" alt="">
+                    <figure class="item" data-groups='["all", "illustration","media"]'>
+                      <a href="images/portfolio/full/1.jpg" class="lightbox" title="Modelo conceitual UML em ASTAH">
+                        <img src="images/portfolio/1.jpg" alt="">
                           <div>
-                            <h5 class="name">DsMovie - React and SpringBoot Model</h5>
-                            <small>Click to access</small>
+                            <h5 class="name">Modelo conceitual UML em ASTAH</h5>
+                            <small>Click to show</small>
                           <i class="fa fa-image"></i>
                         </div>
                       </a>
