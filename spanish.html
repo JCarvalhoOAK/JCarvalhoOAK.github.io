@@ -19,6 +19,45 @@
   <link rel="stylesheet" href="css/main-green.css" type="text/css">
   <script src="js/jquery-2.1.3.min.js"></script>
   <script src="js/modernizr.custom.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.11.2.js"></script> -->
+  <!-- <script type="text/javascript"> -->
+  <!-- <script>
+    jQuery(window).load(function($){
+      atualizaRelogio();
+    });
+  </script> -->
+  <!-- <script>
+    function atualizaRelogio(){ 
+      var momentoAtual = new Date();
+      
+      var vhora = momentoAtual.getHours();
+      var vminuto = momentoAtual.getMinutes();
+      var vsegundo = momentoAtual.getSeconds();
+      
+      var vdia = momentoAtual.getDate();
+      var vmes = momentoAtual.getMonth() + 1;
+      var vano = momentoAtual.getFullYear();
+  
+            var anoNascimento = 1981;
+  
+            var idadeAtual = vano - anoNascimento;
+      
+      if (vdia < 10){ vdia = "0" + vdia;}
+      if (vmes < 10){ vmes = "0" + vmes;}
+      if (vhora < 10){ vhora = "0" + vhora;}
+      if (vminuto < 10){ vminuto = "0" + vminuto;}
+      if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+  
+      dataFormat = vdia + " / " + vmes + " / " + vano;
+      horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+  
+      document.getElementById("data").innerHTML = dataFormat;
+      document.getElementById("hora").innerHTML = horaFormat;
+      document.getElementById("minhaIdade").innerHTML = idadeAtual;
+  
+      setTimeout("atualizaRelogio()",1000);
+    }
+  </script> -->
 </head>
 
 <body class="material-template">
@@ -122,6 +161,9 @@
                     </div>
 
                     <div class="social-links">
+                      <!-- <a href="https://www.linkedin.com/in/jurandi-carvalho-85960216a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/jurandi.carvalho" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/boxinshop/" target="_blank"><i class="fa fa-instagram"></i></a>-->
                       <a href="https://github.com/JCarvalhoOAK" target="_blank"><img src="images/github-icon.png">
                         <a href="https://www.linkedin.com/in/jurandi-carvalho-85960216a/" target="_blank"><img
                             src="images/linkedin-icon.png">
@@ -164,9 +206,12 @@
                     <ul class="info-list">
                       <li><span class="title">Idade</span><span class="value"><output id="minhaIdade"></output></span></li>
                       <li><span class="title">Nacionalidade</span><span class="value">Brasileiro</span></li>
+                      <li><output id="minhaIdade" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output></li>
+                      <li><output id="minhaIdade" ></output></li>
                       <li><span class="title">Cidade/Estado</span><span class="value">Brasília, DF</span></li>
                       <li><span class="title">E-mail</span><span class="value">jurandi.carvalho@outlook.com</span></li>
                       <li><span class="title">Tel.</span><span class="value">+55 61 9 8506 3808</span></li>
+                      <li><span class="title"><output id="minhaIdade" ></output></span>
                     </ul>
                   </div>
                 </div>
@@ -522,6 +567,9 @@
                     <!-- /Portfolio Item 1 -->
 
                     <!-- Portfolio Item 2 -->
+                    <!--<video width="440px" loop="true" autoplay="true" controls>
+                            <source src="images/JSIPTV.mp4" type="video/mp4" />
+                            </video> title="Praesent Dolor Ex" class="lightbox mfp-iframe">-->
                     <figure class="item" data-groups='["all", "video"]'>
                       <a href="images/master_creation.mp4?autoplay=1" title="eu criando e rodando o App!"
                         class="lightbox mfp-iframe">
@@ -838,6 +886,97 @@
               </div>
             </div>
             <!-- End of Clients -->
+
+            <!-- Testimonials -->
+            <!-- <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <div class="block-title">
+                        <h3>Depoimentos de clientes</h3>
+                      </div>
+
+
+                      <div class="testimonials owl-carousel block">
+                        <!-- Testimonial 1 --
+                        <div class="testimonial-item">
+                          <!-- Testimonial Author --
+                          <div class="testimonial-credits">
+                            <!-- Picture --
+                            <div class="testimonial-picture">
+                              <img src="images/testimonials/testimonial_photo_1.jpg" alt="">
+                            </div>              
+                            <!-- /Picture --
+                            <!-- Testimonial author information --
+                            <div class="testimonial-author-info">
+                              <p class="testimonial-author">Maria Richardson</p>
+                              <p class="testimonial-firm">Lindsley's Lumber</p>
+                            </div>
+                          </div>
+                          <!-- /Testimonial author information --
+                          <!-- Testimonial Content --
+                          <div class="testimonial-content">
+                            <div class="testimonial-text">
+                              <p>"Phasellus eu nunc tincidunt, ultricies elit vitae, pretium eros. Sed sed ipsum sed massa."</p>
+                            </div>
+                          </div>            
+                          <!-- /Testimonial Content --              
+                        </div>
+                        <!-- End of Testimonial 1 --
+
+                        <!-- Testimonial 2 --
+                        <div class="testimonial-item">
+                          <!-- Testimonial Author --
+                          <div class="testimonial-credits">
+                            <!-- Picture --
+                            <div class="testimonial-picture">
+                              <img src="images/testimonials/testimonial_photo_2.jpg" alt="">
+                            </div>              
+                            <!-- /Picture --
+                            <!-- Testimonial author information --
+                            <div class="testimonial-author-info">
+                              <p class="testimonial-author">John Doe</p>
+                              <p class="testimonial-firm">Apple Inc.</p>
+                            </div>
+                          </div>
+                          <!-- /Testimonial author information --
+                          <!-- Testimonial Content --
+                          <div class="testimonial-content">
+                            <div class="testimonial-text">
+                              <p>"Vivamus porta dapibus tristique. Suspendisse et arcu eget nisi convallis eleifend nec ac lorem.</p>
+                            </div>
+                          </div>            
+                          <!-- /Testimonial Content --                
+                        </div>
+                        <!-- End of Testimonial 2 --
+
+                        <!-- Testimonial 3 --
+                        <div class="testimonial-item">
+                          <!-- Testimonial Author --
+                          <div class="testimonial-credits">
+                            <!-- Picture --
+                            <div class="testimonial-picture">
+                              <img src="images/testimonials/testimonial_photo_3.jpg" alt="">
+                            </div>              
+                            <!-- /Picture --
+                            <!-- Testimonial author information --
+                            <div class="testimonial-author-info">
+                              <p class="testimonial-author">George McQueen</p>
+                              <p class="testimonial-firm">Harmony House</p>
+                            </div>
+                          </div>
+                          <!-- /Testimonial author information --
+                          <!-- Testimonial Content --
+                          <div class="testimonial-content">
+                            <div class="testimonial-text">
+                              <p>"Aliquam congue auctor lectus sed fermentum. Nulla ultricies tellus quis sapien lacinia egestas."</p>
+                            </div>
+                          </div>            
+                          <!-- /Testimonial Content --                
+                        </div>
+                        <!-- End of Testimonial 3 --
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Tesimonials -->
         </div>
       </div>
       </section>
@@ -931,19 +1070,15 @@
                       <div class="sp-subtitle">French</div>
                     </div>
                     <div class="item">
-                      <div class="sp-subtitle">Spanish</div>
-                    </div>
-                    <div class="item">
                       <div class="sp-subtitle">Choose your language</div>
                     </div>
                   </div>
                 </div>
 
                 <div class="social-links">
-                  <a href="english.html"><img src="images/Canada-icon.png"></a> 
-                  <a href="portuguese.html"><img src="images/Brazil-icon.png"></a> 
-                  <a href="french.html"><img src="images/France-icon.png"></a>    
-                  <a href="spanish.html"><img src="images/Spain-icon.png"></a>
+                  <a href="english.html"><img src="images/Canada-icon.png">
+                    <a href="portuguese.html"><img src="images/Brazil-icon.png">
+                      <a href="french.html"><img src="images/France-icon.png">
                 </div>
               </div>
             </div>
@@ -987,37 +1122,6 @@
   <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
   <script type="text/javascript" src="js/jquery.googlemap.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
-  <script>
-    function calcularIdade(dataNascimento) {
-      const dataNascimentoArray = dataNascimento.split('/');
-      const diaNascimento = parseInt(dataNascimentoArray[0]);
-      const mesNascimento = parseInt(dataNascimentoArray[1]) - 1; // Os meses em JavaScript são base 0
-      const anoNascimento = parseInt(dataNascimentoArray[2]);
-  
-      const dataAtual = new Date();
-      const anoAtual = dataAtual.getFullYear();
-      const mesAtual = dataAtual.getMonth();
-      const diaAtual = dataAtual.getDate();
-  
-      let idade = anoAtual - anoNascimento;
-  
-      if (mesAtual < mesNascimento || (mesAtual === mesNascimento && diaAtual < diaNascimento)) {
-        idade--;
-      }
-  
-      return idade;
-    }
-  
-    const dataNascimento = "17/02/1981"; // Defina sua data de nascimento aqui
-    const idade = calcularIdade(dataNascimento);
-  
-    const minhaIdadeElements = document.querySelectorAll('#minhaIdade');
-    minhaIdadeElements.forEach((element) => {
-      element.textContent = idade;
-    });
-  </script>
-
 </body>
 
 </html>
