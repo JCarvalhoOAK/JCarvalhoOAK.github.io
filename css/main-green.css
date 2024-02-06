@@ -657,6 +657,11 @@ body > footer .copyrights {
   }
 }
 
+.titulo-centralizado {
+  text-align: center;
+  margin-top: 0; 
+}
+
 .site-title-block {
   position: relative;
   float: left;
