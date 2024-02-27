@@ -193,7 +193,7 @@
                       <li><span class="title">Idade</span><span class="value"><output id="minhaIdade"></output></span>
                       </li>
                       <li><span class="title">Nacionalidade</span><span class="value">Brasileiro</span></li>
-                      <li><span class="title">Cidade/Estado</span><span class="value">Brasília, DF</span></li>
+                      <li><span class="title">Residência</span><span class="value">Cidadão internacional</span></li>
                       <li><span class="title">E-mail</span><span class="value">jurandi.carvalho@outlook.com</span></li>
                       <li><span class="title">Tel.</span><span class="value">+55 61 9 8506 3808</span></li>
                     </ul>
@@ -1685,13 +1685,13 @@
               <table id="tabela">
                 <thead class="block-title h4 span">
                   <tr>
-                    <th>|</th>
-                    <th>Nome  do Projeto</th>
-                    <th>Data de criação</th>
-                    <th>Descrição</th>
-                    <th>Linguagem</th>
-                    <th>Status</th>
-                    <th>Link</th>
+                    <th data-sortable="false">|</th>
+                    <th data-sortable="true">Nome do Projeto</th>
+                    <th data-sortable="true">Data de criação</th>
+                    <th data-sortable="true">Descrição</th>
+                    <th data-sortable="true">Linguagem</th>
+                    <th data-sortable="true">Status</th>
+                    <th data-sortable="false">Link</th>
                   </tr>
                 </thead>
                 <tbody id="tabela-body"></tbody>
@@ -1714,6 +1714,46 @@
             </div>
           </section>
           <!-- End of GitRepos Subpage -->
+
+          <!-- GitRepos Subpage -->
+          <section class="pt-page" data-id="gitRepos_old">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>API - Meus repositórios no GitHub</h2>
+              </div>
+              <table id="tabela">
+                <thead>
+                  <tr>
+                    <th data-sortable="false">|</th>
+                    <th data-sortable="true">Nome do Projeto</th>
+                    <th data-sortable="true">Data de criação</th>
+                    <th data-sortable="true">Descrição</th>
+                    <th data-sortable="true">Linguagem</th>
+                    <th data-sortable="true">Status</th>
+                    <th data-sortable="false">Link</th>
+                  </tr>
+                </thead>
+                <tbody id="tabela-body"></tbody>
+              </table>
+              <style>
+                td,
+                th,
+                table {
+                  border: 1px solid black;
+                  padding: 8px;
+                  align-items: center;
+                }
+
+                button {
+                  border-radius: 10%;
+                  margin-bottom: 50px;
+                }
+              </style>
+              <script src="js/api.js"></script>
+            </div>
+          </section>
+          <!-- End of GitRepos Subpage -->
+
 
 
         </div>
